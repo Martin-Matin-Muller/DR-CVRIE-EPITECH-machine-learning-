@@ -30,6 +30,6 @@ compile_commands.json
 *.gcno
 
 # images
-archive
 archive/
+archive128/
 Student_Dataset.csv
