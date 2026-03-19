@@ -37,7 +37,7 @@ def run() -> None:
         if not model:
             messagebox.showerror("Erreur", "Le modèle n'est pas chargé")
             return
-        
+
         image_path = selected_image.get()
         if image_path == "Aucune image selectionnee":
             messagebox.showwarning("Erreur", "Choisis une image d'abord")
@@ -55,7 +55,6 @@ def run() -> None:
             categories = ["NORMAL", "PNEUMONIA"]
             predicted_class = categories[int(prediction)]
             confidence = proba[int(prediction)] * 100
-            
             result_text.set(f"Résultat: {predicted_class} ({confidence:.1f}%)")
         except Exception as e:
             messagebox.showerror("Erreur", f"Erreur lors de la prédiction: {e}")
@@ -78,7 +77,6 @@ def run() -> None:
     )
 
     root.mainloop()
-
 
 if __name__ == "__main__":
     run()
