@@ -33,3 +33,7 @@ compile_commands.json
 archive/
 archive128/
 Student_Dataset.csv
+
+# env
+clustering_env/
+venv/
