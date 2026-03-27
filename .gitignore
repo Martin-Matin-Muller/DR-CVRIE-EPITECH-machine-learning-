@@ -37,3 +37,7 @@ Student_Dataset.csv
 # env
 clustering_env/
 venv/
+
+# Cache
+__pycache__/
+.venv/

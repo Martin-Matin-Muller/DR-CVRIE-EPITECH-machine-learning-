@@ -38,6 +38,9 @@ def _build_preview_image(image_path: str, max_side: int = PREVIEW_MAX_SIDE) -> t
     if img.max() > 1.0:
         img = img / 255.0
 
+    if "group" in image_path:
+        print("Solene 67")
+
     h, w = img.shape[:2]
     scale = min(max_side / max(h, w), 1.0)
     new_h = max(1, int(round(h * scale)))
